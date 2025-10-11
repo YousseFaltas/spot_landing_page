@@ -4,7 +4,65 @@ body{
     padding: 0;
     background-color: #242424;
 }
-h1, h2, h3, h4, h5, h6, p {
+h1{
     color: white;
     padding-left: 20px;
+    font-family: "Anton", sans-serif;
+    font-size: 55px;
+    font-weight: medium;
+    text-indent: 10px;
 }
+p{
+    color: white;
+    padding-left: 20px;
+    font-family: sans-serif;
+}
+
+a{
+    color: rgb(250, 247, 247);
+    text-decoration: none;
+    font-size: 14px;
+}
+
+header{
+    background-image: url('assets/header_img.jpeg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    border: #242424 solid 15px;
+    border-radius: 25px;
+}
+
+header img{
+    width: 200px;
+    height: auto;
+}
+
+
+.header-top{
+    margin-top: 10px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.nav-links{
+    display: flex;
+    background-color: rgba(255, 255, 255, 0.15);
+    backdrop-filter: blur(12px);
+    margin-left: 20px;
+    padding: 16px 22px;
+    border-radius: 12px;
+    border: 2px solid(--color-gray-border)
+}
+.nav-links li{
+    list-style: none;
+    text-decoration: none;
+    padding-right: 25px;
+}
+
+.header-content{
+    display: flex;
+    flex-direction: column;
+    width: 25%;
+    padding: 100px 20px;
+}
+

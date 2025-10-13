@@ -1,68 +1,189 @@
 body{
-    font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
-    background-color: #242424;
+    font-family: 'Arial', sans-serif;
+    overflow-x: hidden;
 }
-h1{
-    color: white;
-    padding-left: 20px;
-    font-family: "Anton", sans-serif;
-    font-size: 55px;
-    font-weight: medium;
+
+nav{
+    display: flex;
+    justify-content: space-between;
+    background-color: #e9ecff;
+    width: 100%;
+    align-items: center;
+    font-family: "Geist Mono", sans-serif;
     text-indent: 10px;
+    border-bottom: 2px solid black;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1000;
 }
-p{
-    color: white;
-    padding-left: 20px;
-    font-family: sans-serif;
+nav ul{
+    display: flex;
+    margin: 20px;
+    align-items: center;
+    text-align: center;
+}
+
+nav li{
+    list-style: none;
+    padding: 10px;
+}
+
+nav img{
+    margin: 10px;
+    padding: 10px;
+    width:220px;
 }
 
 a{
-    color: rgb(250, 247, 247);
     text-decoration: none;
-    font-size: 14px;
+    font-weight: bold;
+    font-size: 18px;
+    font-weight:normal;
+    color:black;
+    text-transform: uppercase;
+
 }
 
-header{
-    background-image: url('assets/header_img.jpeg');
-    background-repeat: no-repeat;
-    background-size: cover;
-    border: #242424 solid 15px;
-    border-radius: 25px;
+@keyframes scroll-right {
+    0% {
+        /* Start off the left edge of the screen */
+        transform: translateX(-100%); 
+    }
+    100% {
+        /* End off the right edge of the screen (100vw = 100% of viewport width) */
+        transform: translateX(100vw);
+    }
 }
 
-header img{
-    width: 200px;
-    height: auto;
+
+.caption{
+    padding-top: 70px;
+    border-bottom: 2px solid black; 
+}
+
+.caption p{
+    margin: 0px;
+    font-family: 'Anek Tamil',sans-serif;
+    font-weight: 800;
+    text-transform: uppercase;
+    font-size:120px ;
+    animation: scroll-right 13s linear infinite;
+    display: inline-block;
+    white-space: nowrap;
+    padding: 10px 0px;
+
+}
+.caption-2{
+    border-bottom: 2px solid black; 
+}
+
+.caption-2 p{
+    margin: 0px;
+    font-family: 'Anek Tamil',sans-serif;
+    font-weight: 800;
+    text-transform: uppercase;
+    font-size:120px ;
+    animation: scroll-right 10s linear infinite;
+    display: inline-block;
+    white-space: nowrap;
+    padding: 10px 0px;
+
+}
+
+.second_part_cap{
+    color: #808cfd;
+}
+
+.app-link{
+    text-align: center;
+    background-color: #808cfd;
+    padding: 10px 20px 10px 10px;
+    border-radius: 5px;
+}
+
+#home{
+    display: flex;
+    border-bottom: 2px solid black;
+}
+
+#home img{
+    width: 66%;
+    border-right: 2px solid black;
+}
+
+.home-div{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    border-left: 2px solid black;
+}
+
+.home-div h1{
+    font-family: 'Anek Tamil',sans-serif;
+    font-weight: 800;
+    text-transform: uppercase;
+    font-size:60px ;
+    padding-left: 20px;
+}
+
+.home-div p{
+    font-family: 'Geist Mono',sans-serif;
+    font-weight: 400;
+    font-size:20px ;
+    padding: 0px 30px 50px 20px;
+}
+
+#about{
+    display: grid;
+    width: 100%; 
+    grid-template-columns: 1fr 1fr 1.05fr;
+    gap: 10px;
+    border-bottom: 2px solid black;
 }
 
 
-.header-top{
-    margin-top: 10px;
+#about img{
+width: 100%;
+}
+
+.community{
     display: flex;
     justify-content: space-between;
 }
 
-.nav-links{
-    display: flex;
-    background-color: rgba(255, 255, 255, 0.15);
-    backdrop-filter: blur(12px);
-    margin-left: 20px;
-    padding: 16px 22px;
-    border-radius: 12px;
-    border: 2px solid(--color-gray-border)
-}
-.nav-links li{
-    list-style: none;
-    text-decoration: none;
-    padding-right: 25px;
+.community-text{
+    display: grid;
+    grid-template-rows: 1.2fr 1fr 1fr 1fr;
 }
 
-.header-content{
-    display: flex;
-    flex-direction: column;
-    width: 25%;
-    padding: 100px 20px;
+.community-header{
+    font-family: 'Anek Tamil',sans-serif;
+    font-weight: 800;
+    text-transform: uppercase;
+    font-size:30px ;
+    padding-left: 10px;
+    border-bottom: 2px solid black;
 }
 
+.community-div {
+    border-bottom: 2px solid black;
+}
+.community-div h2{
+    font-family: 'Anek Tamil',sans-serif;
+    font-weight: 800;
+    text-transform: uppercase;
+    padding-left: 10px;
+    font-size:40px ;
+
+}
+.community img{
+    width:70% ;
+}
+.community p{
+    font-family: "Geist",sans-serif;
+    padding-left: 10px;
+    font-size:23px ;
+}

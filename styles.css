@@ -1,23 +1,39 @@
+:root {
+    --light-bg: #e9ecff;
+    --light-surface: #ffffff;
+    --light-text: #000000;
+    --light-accent: #808cfd;
+    --light-border: #000000;
+    --dark-bg: #1a1f2c;
+    --dark-surface: #242936;
+    --dark-text: #e0e0e0;
+    --dark-heading: #ffffff;
+    --dark-accent: #8a94ff;
+    --dark-border: #3c4251;
+}
+
 body{
     margin: 0;
     padding: 0;
     font-family: 'Arial', sans-serif;
     overflow-x: hidden;
+    background-color: var(--light-surface);
+    color: var(--light-text);
 }
 html {
-  scroll-behavior: smooth;
-  scroll-padding-top: 80px;
-  scrollbar-color:#808CFD #FFFFFF;
+    scroll-behavior: smooth;
+    scroll-padding-top: 80px;
+    scrollbar-color: var(--light-accent) var(--light-surface);
 }
 nav{
     display: flex;
     justify-content: space-between;
-    background-color: #e9ecff;
+    background-color: var(--light-bg);
     width: 100%;
     align-items: center;
     font-family: "Geist Mono", sans-serif;
     text-indent: 10px;
-    border-bottom: 2px solid black;
+    border-bottom: 2px solid var(--light-border);
     position: fixed;
     top: 0;
     left: 0;
@@ -29,45 +45,35 @@ nav ul{
     align-items: center;
     text-align: center;
 }
-
 nav li{
     list-style: none;
     padding: 10px;
 }
-
 nav img{
     margin: 10px;
     padding: 10px;
     width:220px;
 }
-
 a{
     text-decoration: none;
     font-weight: bold;
     font-size: 18px;
     font-weight:normal;
-    color:black;
+    color: var(--light-text);
     text-transform: uppercase;
-
 }
-
 @keyframes scroll-right {
     0% {
-        /* Start off the left edge of the screen */
-        transform: translateX(-100%); 
+        transform: translateX(-100%);
     }
     100% {
-        /* End off the right edge of the screen (100vw = 100% of viewport width) */
         transform: translateX(100vw);
     }
 }
-
-
 .caption{
     padding-top: 70px;
-    border-bottom: 2px solid black; 
+    border-bottom: 2px solid var(--light-border);
 }
-
 .caption p{
     margin: 0px;
     font-family: 'Anek Tamil',sans-serif;
@@ -78,12 +84,10 @@ a{
     display: inline-block;
     white-space: nowrap;
     padding: 10px 0px;
-
 }
 .caption-2{
-    border-bottom: 2px solid black; 
+    border-bottom: 2px solid var(--light-border);
 }
-
 .caption-2 p{
     margin: 0px;
     font-family: 'Anek Tamil',sans-serif;
@@ -94,37 +98,30 @@ a{
     display: inline-block;
     white-space: nowrap;
     padding: 10px 0px;
-
 }
-
 .second_part_cap{
-    color: #808cfd;
+    color: var(--light-accent);
 }
-
 .app-link{
     text-align: center;
-    background-color: #808cfd;
+    background-color: var(--light-accent);
     padding: 10px 20px 10px 10px;
     border-radius: 5px;
 }
-
 #home{
     display: flex;
-    border-bottom: 2px solid black;
+    border-bottom: 2px solid var(--light-border);
 }
-
 #home img{
     width: 66%;
-    border-right: 2px solid black;
+    border-right: 2px solid var(--light-border);
 }
-
 .home-div{
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    border-left: 2px solid black;
+    border-left: 2px solid var(--light-border);
 }
-
 .home-div h1{
     font-family: 'Anek Tamil',sans-serif;
     font-weight: 800;
@@ -132,48 +129,40 @@ a{
     font-size:60px ;
     padding-left: 20px;
 }
-
 .home-div p{
     font-family: 'Geist Mono',sans-serif;
     font-weight: 400;
     font-size:20px ;
     padding: 0px 30px 50px 20px;
 }
-
 #about{
     display: grid;
-    width: 100%; 
+    width: 100%;
     grid-template-columns: 1fr 1fr 1.05fr;
     gap: 10px;
-    border-bottom: 2px solid black;
+    border-bottom: 2px solid var(--light-border);
 }
-
-
 #about img{
-width: 100%;
+    width: 100%;
 }
-
 .community{
     display: flex;
     justify-content: space-between;
 }
-
 .community-text{
     display: grid;
     grid-template-rows: 1.2fr 1fr 1fr 1fr;
 }
-
 .community-header{
     font-family: 'Anek Tamil',sans-serif;
     font-weight: 800;
     text-transform: uppercase;
     font-size:30px ;
     padding-left: 10px;
-    border-bottom: 2px solid black;
+    border-bottom: 2px solid var(--light-border);
 }
-
 .community-div {
-    border-bottom: 2px solid black;
+    border-bottom: 2px solid var(--light-border);
 }
 .community-div h2{
     font-family: 'Anek Tamil',sans-serif;
@@ -181,7 +170,6 @@ width: 100%;
     text-transform: uppercase;
     padding-left: 10px;
     font-size:40px ;
-
 }
 .community img{
     width:70% ;
@@ -196,7 +184,7 @@ width: 100%;
     flex-direction:column;
     width:100%;
     height:500px ;
-    background-color: #808cfd;
+    background-color: var(--light-accent);
     align-items: center;
     justify-content: center;
 }
@@ -215,9 +203,9 @@ width: 100%;
     margin-bottom:30px ;
 }
 .reserving button{
-    background-color: white;
+    background-color: var(--light-surface);
     font-family: 'Anek Tamil',sans-serif;
-    color: black;
+    color: var(--light-text);
     text-transform: uppercase;
     border: none;
     padding: 10px 20px;
@@ -227,12 +215,12 @@ width: 100%;
     border-radius: 5px;
 }
 .reserving button:hover{
-    background-color: #e9ecff;
+    background-color: var(--light-bg);
     transition: 0.3s;
 }
 footer{
-    border-top: 2px solid black;
-    background-color: #e9ecff;
+    border-top: 2px solid var(--light-border);
+    background-color: var(--light-bg);
     width: 100%;
     display:flex;
     height:600px;
@@ -270,7 +258,7 @@ footer{
     flex-direction: column;
     justify-content: space-between;
     padding-right: 40px ;
-    align-items: flex-end; 
+    align-items: flex-end;
 }
 .footer-div2 p{
     font-family: 'Geist Mono',sans-serif;
@@ -288,4 +276,111 @@ footer{
 .social{
     display:flex;
     flex-direction:column;
+}
+
+#darkModeToggle {
+    background-color: #808CFD;
+    border-radius: 50%;
+    border: none;
+    cursor: pointer;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#darkModeToggle svg {
+    width: 24px;
+    height: 24px;
+    stroke: var(--light-text);
+    transition: stroke 0.3s;
+}
+
+.icon-moon {
+    display: none;
+}
+
+body.dark-mode {
+    background-color: var(--dark-bg);
+    color: var(--dark-text);
+}
+
+body.dark-mode html {
+    scrollbar-color: var(--dark-accent) var(--dark-bg);
+}
+
+body.dark-mode nav {
+    background-color: var(--dark-surface);
+    border-bottom: 2px solid var(--dark-border);
+}
+
+body.dark-mode a {
+    color: var(--dark-text);
+}
+
+body.dark-mode .app-link a {
+    color: var(--dark-heading);
+}
+
+body.dark-mode h1, body.dark-mode h2 {
+    color: var(--dark-heading);
+}
+
+body.dark-mode .caption,
+body.dark-mode .caption-2,
+body.dark-mode #home,
+body.dark-mode #about,
+body.dark-mode .community-div,
+body.dark-mode .community-header {
+    border-color: var(--dark-border);
+}
+
+body.dark-mode .second_part_cap {
+    color: var(--dark-accent);
+}
+
+body.dark-mode .app-link {
+    background-color: var(--dark-accent);
+}
+
+body.dark-mode #home img {
+    border-right: 2px solid var(--dark-border);
+}
+
+body.dark-mode .home-div {
+    border-left: 2px solid var(--dark-border);
+}
+
+body.dark-mode .reserving {
+    background-color: var(--dark-accent);
+}
+
+body.dark-mode .reserving h1, body.dark-mode .reserving p {
+    color: var(--dark-heading);
+}
+
+body.dark-mode .reserving button {
+    background-color: var(--dark-surface);
+    color: var(--dark-heading);
+}
+
+body.dark-mode .reserving button:hover {
+    background-color: #3c4251;
+}
+
+body.dark-mode footer {
+    background-color: var(--dark-surface);
+    border-top: 2px solid var(--dark-border);
+}
+
+body.dark-mode #darkModeToggle svg {
+    stroke: var(--dark-heading);
+}
+
+body.dark-mode .icon-sun {
+    display: none;
+}
+
+body.dark-mode .icon-moon {
+    display: block;
 }

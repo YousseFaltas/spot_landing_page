@@ -1,54 +1,126 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link href="https://fonts.googleapis.com/css2?family=Anek+Tamil:wght@100..800&family=Geist+Mono:wght@100..900&display=swap" rel="stylesheet">
-        <link rel="stylesheet" href="styles.css">
-        <link rel="icon" href="assets/fitness.ico">
-        <title>PrimalTraining</title>
-    </head>
-    <body>
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Anek+Tamil:wght@100..800&family=Geist+Mono:wght@100..900&display=swap"
+        rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="icon" href="assets/fitness.ico" />
+    <title>PrimalTraining</title>
+</head>
+
+<body>
+    <!-- ================= HEADER & NAVIGATION ================= -->
+    <header>
         <nav>
-            <img src="assets/logo.png" alt="logo">
+            <img src="assets/logo.png" alt="PrimalTraining logo" />
             <ul>
+                <!-- Dark mode toggle button -->
                 <li>
                     <button id="darkModeToggle" aria-label="Toggle dark mode">
-                        <svg class="icon-sun" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="5"></circle><line x1="12" y1="1" x2="12" y2="3"></line><line x1="12" y1="21" x2="12" y2="23"></line><line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line><line x1="1" y1="12" x2="3" y2="12"></line><line x1="21" y1="12" x2="23" y2="12"></line><line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line><line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line></svg>
-                        <svg class="icon-moon" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path></svg>
+                        <!-- Sun icon (light mode) -->
+                        <svg
+                            class="icon-sun"
+                            xmlns="http://www.w3.org/2000/svg"
+                            width="24"
+                            height="24"
+                            viewBox="0 0 24 24"
+                            fill="none"
+                            stroke="currentColor"
+                            stroke-width="2"
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                        >
+                            <circle cx="12" cy="12" r="5"></circle>
+                            <line x1="12" y1="1" x2="12" y2="3"></line>
+                            <line x1="12" y1="21" x2="12" y2="23"></line>
+                            <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+                            <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+                            <line x1="1" y1="12" x2="3" y2="12"></line>
+                            <line x1="21" y1="12" x2="23" y2="12"></line>
+                            <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+                            <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+                        </svg>
+                        <!-- Moon icon (dark mode) -->
+                        <svg
+                            class="icon-moon"
+                            xmlns="http://www.w3.org/2000/svg"
+                            width="24"
+                            height="24"
+                            viewBox="0 0 24 24"
+                            fill="none"
+                            stroke="currentColor"
+                            stroke-width="2"
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                        >
+                            <path
+                                d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"
+                            ></path>
+                        </svg>
                     </button>
                 </li>
+                <!-- Navigation links -->
                 <li><a href="#home">Home</a></li>
                 <li><a href="#about">About</a></li>
                 <li><a href="#contact">Contact</a></li>
                 <li class="app-link"><a href="#app">Try Now</a></li>
             </ul>
         </nav>
-        <div class="caption" id="home">
-            <p>Find Your Expert.<span class="second_part_cap"> Master Your Movement.</span></p>
-        </div>
-        <div id="home">
-            <img src="assets/image_1.png" alt="people training">
+    </header>
+
+    <main>
+        <!-- ================= HERO CAPTION ================= -->
+        <section class="caption" id="home">
+            <p>
+                Find Your Expert.<span class="second_part_cap"> Master Your Movement.</span>
+            </p>
+        </section>
+
+        <!-- ================= HERO SECTION ================= -->
+        <section class="hero" id="home">
+            <img src="assets/image_1.png" alt="People training" />
             <div class="home-div">
-                <h1>for the <br>committed</h1>
-                <p>Find top-rated trainers, crush your goals,<br> and elevate every rep with real-time movement tracking. From strength gains to personal bests, train smarter—like a pro.</p>
+                <h1>for the <br />committed</h1>
+                <p>
+                    Find top-rated trainers, crush your goals, and elevate every rep with
+                    real-time movement tracking. From strength gains to personal bests,
+                    train smarter—like a pro.
+                </p>
             </div>
-        </div>
-        <div id="about">
+        </section>
+
+        <!-- ================= ABOUT SECTION ================= -->
+        <section id="about">
             <div class="home-div">
                 <h1>Guided by experts</h1>
-                <p>We believe in creating a positive environment where you can thrive. We're here to help you achieve your goals and unlock your full potential.</p>
+                <p>
+                    We believe in creating a positive environment where you can thrive.
+                    We're here to help you achieve your goals and unlock your full
+                    potential.
+                </p>
             </div>
             <div class="home-div">
                 <h1>Expert Coaching, One Tap Away</h1>
-                <p>Discover top-tier trainers, handpicked for performance. Our app connects you with certified coaches across strength, conditioning, mobility, and more—so you can find the perfect fit for your goals. Browse profiles, view rankings, and get personalized programs delivered straight to your phone.</p>
+                <p>
+                    Discover top-tier trainers, handpicked for performance. Our app
+                    connects you with certified coaches across strength, conditioning,
+                    mobility, and more—so you can find the perfect fit for your goals.
+                </p>
             </div>
-            <img src="assets/image_2.png" alt="girl training">
-        </div>
-        <div class="caption-2">
+            <img src="assets/image_2.png" alt="Woman training" />
+        </section>
+
+        <!-- ================= COMMUNITY INTRO CAPTION ================= -->
+        <section class="caption-2">
             <p>Join The<span class="second_part_cap"> Community</span></p>
-        </div>
-        <div class="community">
+        </section>
+
+        <!-- ================= COMMUNITY SECTION ================= -->
+        <section class="community">
             <div class="community-text">
                 <div class="community-header">
                     <h1>DISCOVER YOUR POTENTIAL</h1>
@@ -65,33 +137,44 @@
                     <h2>A Supportive Tribe</h2>
                     <p>A community that pushes you to be your best.</p>
                 </div>
-            </div> 
-            <img src="assets/image_3.png" alt="girl training">
-        </div>
-        <div class="reserving">
+            </div>
+            <img src="assets/image_3.png" alt="Community training" />
+        </section>
+
+        <!-- ================= CALL-TO-ACTION SECTION ================= -->
+        <section class="reserving">
             <p>what we believe in</p>
             <h1>join the primal tribe today</h1>
             <button>reserve your spot</button>
+        </section>
+    </main>
+
+    <!-- ================= FOOTER ================= -->
+    <footer id="contact">
+        <div class="footer-div1">
+            <img src="assets/icon.png" alt="PrimalTraining icon" />
+            <div class="contact">
+                <h2>contact</h2>
+                <p>
+                    Email:
+                    <a href="mailto:primaltraining@gmail.com">primaltraining@gmail.com</a>
+                </p>
+                <p>Phone: <a href="tel:+1234567890">+1 (234) 567-890</a></p>
+            </div>
         </div>
-        <footer id="contact">
-            <div class="footer-div1">
-                <img src="assets/icon.png" alt="logo">
-                <div class="contact">
-                    <h2>contact</h2>
-                    <p>Email: <a href="mailto:primaltraining@gmail.com">primaltraining@gmail.com</a></p>
-                    <p>Phone: <a href="tel:+1 (234) 567-890">+1 (234) 567-890</a></p>
-                </div>
+
+        <div class="footer-div2">
+            <h1>PrimalTraining</h1>
+            <div class="social">
+                <h2>social</h2>
+                <p><a href="#">Instagram</a></p>
+                <p><a href="#">Facebook</a></p>
+                <p><a href="#">Twitter</a></p>
             </div>
-            <div class="footer-div2">
-                <h1>PrimalTraining</h1>
-                <div class="social">
-                    <h2>social</h2>
-                    <p><a href="#">Instagram</a></p>
-                    <p><a href="#">Facebook</a></p>
-                    <p><a href="#">Twitter</a></p>
-                </div>
-            </div>
-        </footer>
-        <script src="scripts.js"></script>
-    </body>
+        </div>
+    </footer>
+
+    <!-- ================= JAVASCRIPT ================= -->
+    <script src="scripts.js"></script>
+</body>
 </html>
